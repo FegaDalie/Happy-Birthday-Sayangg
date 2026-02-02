@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Febi 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --dark:#222831;
+  --gray:#393e46;
+  --taupe:#948979;
+  --cream:#dfd0b8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Poppins',sans-serif;
+  background:radial-gradient(circle at top,var(--gray),var(--dark));
+  color:var(--cream);
+  min-height:100vh;
+  overflow:hidden;
+}
+
+/* START SCREEN */
+#startScreen{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+}
+#startBtn{
+  width:110px;height:110px;
+  border-radius:50%;
+  background:var(--taupe);
+  color:#222;
+  font-size:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  animation:pulse 1.5s infinite;
+}
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
+
+/* NAVBAR */
+.navbar{
+  position:sticky;top:0;z-index:1000;
+  display:flex;justify-content:center;gap:28px;
+  padding:16px;
+  background:rgba(34,40,49,.85);
+  backdrop-filter:blur(10px);
+}
+.navbar a{
+  color:var(--taupe);
+  text-decoration:none;
+  font-weight:500;
+}
+.navbar a.active,
+.navbar a:hover{color:var(--cream)}
+
+/* SECTION */
+section{display:none;padding:32px 18px}
+section.active{display:block}
+
+.card{
+  max-width:900px;
+  margin:24px auto;
+  padding:28px;
+  background:rgba(255,255,255,.06);
+  border-radius:26px;
+  box-shadow:0 25px 50px rgba(0,0,0,.35);
+}
+
+h1{
+  font-family:'Playfair Display',serif;
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.birthday-text{
+  text-align:justify;
+  line-height:1.9;
+  font-size:15px;
+}
+
+/* COUNTDOWN */
+.timer{
+  text-align:center;
+  font-size:28px;
+  font-weight:600;
+}
+
+/* GALLERY */
+.play-btn{
+  display:block;
+  margin:0 auto 20px;
+  padding:12px 30px;
+  border-radius:30px;
+  border:none;
+  background:var(--taupe);
+  color:#222;
+  font-weight:600;
+}
+.gallery{
+  margin:20px auto 0;
+  max-width:900px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+.gallery img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  border-radius:18px;
+  opacity:0;
+  transform:scale(.95) translateY(20px);
+  transition:.7s ease
+}
+.gallery img.show{
+  opacity:1;
+  transform:scale(1) translateY(0)
+}
+
+/* WISH */
+.wish-gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+  margin-top:20px
+}
+.wish-gallery div{text-align:center}
+.wish-gallery img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:18px
+}
+.wish-text{
+  margin-top:18px;
+  text-align:center;
+  font-style:italic;
+  color:var(--taupe)
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .gallery img{height:260px}
+  .wish-gallery{grid-template-columns:repeat(2,1fr)}
+  .wish-gallery img{height:220px}
+  .timer{font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<!-- START -->
+<div id="startScreen">
+  <div id="startBtn">▶</div>
+</div>
+
+<audio id="bgMusic" src="Donne Maula - Bercinta Lewat Kata Official Lyric Video OST Jatuh Cinta Seperti di Film-Film.mp3" loop></audio>
+
+<nav class="navbar">
+  <a href="#" data-page="birthday" class="active">Happy Birthday</a>
+  <a href="#" data-page="countdown">Countdown</a>
+  <a href="#" data-page="wish">Wish This Year</a>
+  <a href="#" data-page="gallery">Gallery</a>
+</nav>
+
+<section id="birthday" class="active">
+  <div class="card">
+    <h1>Happy Birthday 🎂</h1>
+    <p class="birthday-text">
+      <!-- TEKS PANJANG KAMU (TETAP) -->
+      Happy birthday yaw sayangku cintaku cantik febi erika yang sangat cantikk 🤍⭐️🥳🦋 
+      terimaksih yaa sayang sudah lahir ke dunia inii terimakasih jugaa uda hadir di hidup akuu, aku bersyukur banget bisa ngelewatin momen ini bareng kamuuu, semoga di ultah kamu yang sekarang ini kamu makin sehat yaa cayang rezekinya di limpahin lagii semoga segela macam bentuk kesulitan kamu di tahun ini bisa di permudah dan selalu di kasi jalan ama allah, semoga semakin berbakti juga ke orang tuaanyaa semogaa keinginan kamu di tahun ini bisa tercapai, dann jangan pernah berkecil hati kalo semisalnya kamu gagal karena kegagalan adalah sebuah proses dan kunci kesuksesakk percayalaah, aku bakal jadi support sistem pendukung kamuuuu, jangan pernah mengangap kamu berjalan sendiri, kamu tidak pernah sendiri aku selalu ada di samping kamu buat ngebantuin apapun itu, buat berjuang bareng bareng, semoga berbagai harapan kita di tahun ini pun bisa terwujud, aku sayang ama kamu, aku cintaaa sekali ama pacar aku yang super duper cantikkk, jadi kalo ada apa apaa bilang aku yaaa, aku sangat berharap di ultah kamu yang sekarang kamu bisaa jadi versi terbaik untuk diri kamu sendiri, semogaa tugas tugas jugaa bisa selalu di kumpulin tepat waktu ya sayangg dann semoga jam tidur kamu juga bisa selalu cukup, ini aku ngerangkai kata katanyaa bingung sebenernya harus mulai dari mana hoho😭, aku bener bener sangat menghargai banget setiap momen kecil yang kita lewatin salah satunya inii ultah kamuuu, semoga kedepannya kita juga bisa selalu merayakan berbagai momen apapun itu entah momen kecil atau momen besar, semoga kita juga tumbuh lebih baik, daannn jangan lupa bersyukur atas hal apapun yang ada di sekeliling kamu sayangg
+
+i love you febi erika, sekali lagi HAPPYY BIRTHDAYYY😘😭🚀💞✨❤️⭐️🥳🥳🥳🥳🥳🥳🥳🎁🎂🎂🎂🎁
+    </p>
+  </div>
+</section>
+
+<section id="countdown">
+  <div class="card">
+    <h1>Hitung Mundur Spesial 💞</h1>
+    <h3 style="text-align:center">Anniversary Kita</h3>
+    <div id="timerAnniv" class="timer"></div><br>
+    <h3 style="text-align:center">Ulang Tahun Kamu 🎂</h3>
+    <div id="timerBirthday" class="timer"></div>
+  </div>
+</section>
+
+<section id="wish">
+  <div class="card">
+    <h1>Wish This Year</h1>
+    <div class="wish-gallery">
+      <div><img src="lawu.jpg"><p>Gunung Lawu</p></div>
+      <div><img src="sindoro.jpg"><p>Gunung Sindoro</p></div>
+      <div><img src="kidzania.jpg"><p>Kidzania</p></div>
+      <div><img src="Jakarta_aquarium.jpg"><p>Jakarta Aquarium</p></div>
+      <div><img src="pangandaran.jpeg"><p>Pangandaran</p></div>
+      <div><img src="bandung.jpg"><p>Bandung</p></div>
+      <div><img src="pulau seribu.jpg"><p>Pulau Seribu</p></div>
+      <div><img src="karimun jawa.jpg"><p>Karimun Jawa</p></div>
+    </div>
+    <p class="wish-text">semoga tahun ini berbagai keinginan kita bisa tercapai satu persatu 🤍</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <button class="play-btn" id="showGallery">▶ MEMORIES</button>
+  <div class="gallery">
+    <img src="11.jpeg"><img src="1 (4).jpeg"><img src="1 (3).jpeg">
+    <img src="1 (10).jpeg"><img src="1 (1).jpeg"><img src="1 (2).jpeg">
+    <img src="1 (9).jpeg"><img src="1 (11).jpeg"><img src="1 (8).jpeg">
+    <img src="1 (7).jpeg"><img src="1 (6).jpeg"><img src="1 (5).jpeg">
+  </div>
+</section>
+
+<script>
+// START
+const startBtn=document.getElementById('startBtn');
+const startScreen=document.getElementById('startScreen');
+const music=document.getElementById('bgMusic');
+
+startBtn.onclick=()=>{
+  startScreen.style.display='none';
+  document.body.style.overflow='auto';
+  music.play();
+};
+
+// NAVIGATION
+const navLinks=document.querySelectorAll('.navbar a');
+const sections=document.querySelectorAll('section');
+navLinks.forEach(link=>{
+  link.onclick=()=>{
+    navLinks.forEach(l=>l.classList.remove('active'));
+    sections.forEach(s=>s.classList.remove('active'));
+    link.classList.add('active');
+    document.getElementById(link.dataset.page).classList.add('active');
+  }
+});
+
+// COUNTDOWN
+const anniv=new Date('2026-04-02');
+const birthday=new Date('2026-07-07');
+setInterval(()=>{
+  const now=new Date();
+  timerAnniv.textContent=
+    Math.floor((anniv-now)/86400000)+' Hari '+
+    Math.floor((anniv-now)/3600000)%24+' Jam '+
+    Math.floor((anniv-now)/60000)%60+' Menit '+
+    Math.floor((anniv-now)/1000)%60+' Detik';
+  timerBirthday.textContent=
+    Math.floor((birthday-now)/86400000)+' Hari '+
+    Math.floor((birthday-now)/3600000)%24+' Jam '+
+    Math.floor((birthday-now)/60000)%60+' Menit '+
+    Math.floor((birthday-now)/1000)%60+' Detik';
+},1000);
+
+// GALLERY EFFECT
+document.getElementById('showGallery').onclick=()=>{
+  document.querySelectorAll('.gallery img').forEach((img,i)=>{
+    setTimeout(()=>img.classList.add('show'),i*200);
+  });
+};
+</script>
+
+</body>
+</html>
